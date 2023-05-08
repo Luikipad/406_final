@@ -1,0 +1,30 @@
+{% extends "bootstrap/base.html" %}
+
+{% block content %}
+<form action="{{ url_for('addrec') }}" method="POST">
+   <h3>Client's Information</h3>
+   ClientID<br>
+   <input type="text" name="ClientID" /></br>
+   
+   ClientName<br>
+   <input type="text" name="ClientName" /></br>
+
+   ClientPhone<br>
+   <input type="text" name="ClientPhone" /></br>
+
+   ClientWatch<br>
+   <input type="text" name="ClientWatch" /><br>
+
+   TotalSpent<br>
+   <input type="text" name="TotalSpent" /><br>
+   <input type="submit" value="submit" /><br>
+</form>
+
+<p>
+   <a href="/">Go Back To Home Page</a>
+</p>
+
+</body>
+
+</html>
+{% endblock %}
