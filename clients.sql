@@ -29,7 +29,7 @@ CREATE TABLE `clients` (
   `ClientWatch` varchar(75) DEFAULT NULL,
   `TotalSpent` varchar(15) DEFAULT NULL,
   PRIMARY KEY (`ClientID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -38,7 +38,7 @@ CREATE TABLE `clients` (
 
 LOCK TABLES `clients` WRITE;
 /*!40000 ALTER TABLE `clients` DISABLE KEYS */;
-INSERT INTO `clients` VALUES (1,'Brian','123-456-7890','Oris Big Crown Pointer Date','$1,400');
+INSERT INTO `clients` VALUES (1,'Brian','123-456-7890','Oris Big Crown Pointer Date','$1,400'),(2,'John Doe','112-223-3344','Seiko 5','$300'),(3,'Bobby Lee','321-654-0987','Rado Captian Cook','$1,100');
 /*!40000 ALTER TABLE `clients` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -51,4 +51,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-11  9:56:29
+-- Dump completed on 2023-05-11 10:25:04
